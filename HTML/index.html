@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    .frame {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .track {
+      display: flex;
+      height: 200px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .box:nth-child(1) { background: red; }
+    .box:nth-child(2) { background: orange; }
+    .box:nth-child(3) { background: yellow; color: black; }
+    .box:nth-child(4) { background: green; }
+    .box:nth-child(5) { background: blue; }
+    .box:nth-child(6) { background: indigo; }
+    .box:nth-child(7) { background: violet; }
+    .box:nth-child(8) { background: pink; }
+
+    /* 💻 Desktop view: show all boxes */
+    @media (min-width: 768px) {
+      .frame {
+        overflow: visible;
+      }
+      .track {
+        flex-wrap: wrap;
+        transform: none !important;
+        transition: none !important;
+        height: auto;
+      }
+      .box {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="frame" id="frame">
+  <div class="track" id="track">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth < 768;
+  if (isMobile) {
+    const track = document.getElementById('track');
+    const totalBoxes = 8;
+    let currentIndex = 0;
+
+    function moveToBox(index) {
+      track.style.transform = `translateX(-${index * 210}px)`; // 200px + 10px margin
+    }
+
+    // Auto-slide every 3 seconds
+    let autoSlide = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalBoxes;
+      moveToBox(currentIndex);
+    }, 3000);
+
+    // Swipe support
+    let startX = 0;
+    document.getElementById('frame').addEventListener('touchstart', (e) => {
+      clearInterval(autoSlide);
+      startX = e.touches[0].clientX;
+    });
+
+    document.getElementById('frame').addEventListener('touchend', (e) => {
+      const endX = e.changedTouches[0].clientX;
+      if (startX - endX > 50) {
+        currentIndex = (currentIndex + 1) % totalBoxes;
+      } else if (endX - startX > 50) {
+        currentIndex = (currentIndex - 1 + totalBoxes) % totalBoxes;
+      }
+      moveToBox(currentIndex);
+      autoSlide = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalBoxes;
+        moveToBox(currentIndex);
+      }, 3000);
+    });
+  }
+</script>
+
+</body>
+</html>

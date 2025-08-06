@@ -1,0 +1,17 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.editor.showTabs": "single",
+  "workbench.activityBar.location": "top",
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.saveFileBeforeRun": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.preferredHighContrastColorTheme": "Monokai Dimmed",
+  "liveServer.settings.donotVerifyTags": true,
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.root": "/HAVRON PC",
+  "liveServer.settings.host": "127.0.01",
+  "liveServer.settings.port": 5500
+}

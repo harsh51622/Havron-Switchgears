@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="changeover.css">
+    <link rel="stylesheet" href="/HEADER/header.css">
+   
+    <title>Document</title>
+</head>
+<body>
+<div class="header-container">
+
+    <!-- Theme and toggles -->
+    <input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="search-toggle">
+
+    <nav>
+      <div class="logoheader"><img id="img-logo" src="/LOGo/new.png" href="/MAIN/HOME/home.html"
+          onclick="setActive(this)"></div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/MAIN/HOME/home.html">HOME</a></li>
+        <li><a href="/MAIN/ABOUT US/about us.html">ABOUT US</a></li>
+        <li><a href="/MAIN/NETWORKS/Networks.html">NETWORKS</a></li>
+
+
+        <div class="Dropdown" id="productsDropdowns">
+
+          <li><a href="/MAIN/PRODUCTS/products.html">PRODUCTS</a></li>
+          <div class="dropdown-content">
+
+            <a href="/items/capacitor/capacitor.html">Capacitors</a>
+            <a href="/items/mcb/mcb.html">Mcb</a>
+            <a href="/items/doubledoor/doubledoor.html">Doubledoor</a>
+            <a href="/items/off load changepover/changeover.html">Changeover</a>
+            <a href="/items/switchgear/switchgear.html">Switchgears</a>
+
+          </div>
+        </div>
+
+
+        <li><a href="/MAIN//CONTACT US/contact us.html">CONTACT US</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="nav-right">
+        <label for="search-toggle" class="search-label" id="searchIcon">🔍</label>
+        <label onclick="toggleTheme()" class="theme-label">🌓</label>
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Search Box -->
+
+      <div class="search-box" id="searchBox">
+
+        <input type="text" id="searchInput" placeholder="Type to search (e.g. products, mcb)">
+        <button onclick="searchPage()" type="submit">Go</button>
+
+      </div>
+    </nav>
+  </div>
+        <div class="locates">
+            <button id="homebtn" class="allinone" onclick="window.location.href='/MAIN/HOME/home.html'">HOME</button>
+            <button class="allinone">/</button>
+            <button id="backbtn" class="allinone" onclick="goBack()">BACK</button>
+        </div>
+
+    <div id="product1" class="product-page">
+        <h2 style="font-size: 50px; text-align: center;">OFF LOAD CHANGEOVER</h2>
+        <div class="information">
+        <div class="leftdetails">
+        <img src="/IMAGES/items/refurbished-havells-changeover-switch-500x500.jpg" alt="Changeover"></div>
+       
+        <div class="rightdetails" >
+            <h3 style="font-size: 25px; font-weight: bolder; margin-left: 50px;">APPLICATION
+        </h3>
+        <ul><li>● Change the entire LOAD between Mains and Alternate supply.</li></ul>
+
+        <h3 style="font-size: 25px; font-weight: bolder; margin-left: 50px;">USP’s </h3>
+        <ul><li>● Conforming to IS 13947 part 3/93.</li>
+            <li>● Manufactured of Sturdy Top Quality MS Sheet</li>
+            <li>● Exclusive & patented Deep Drawn Models</li>
+            <li>● Long Lasting & Attractive Matte White Powder Coating</li>
+            <li>● High grade Porcelain</li>
+            <li>● Pure Copper Current Carrying Parts</li></ul>
+            
+
+            <h3 style="font-size: 25px; font-weight: bolder; margin-left: 50px;">RANGE
+            </h3>
+            <ul><li>● Single Phase – 2Pole – 16A, 32A, 63A.</li>
+                <li>● Three Phase – 3Pole – 32A.</li>
+                <li>● Three Phase – 4Pole – 16A, 32A, 63A, 100A.</li></ul>
+        </div></div>
+        
+
+    </div>
+
+
+    <script src="changeover.js"></script>
+    <script src="/header//header.js"></script>
+</body>
+</html>

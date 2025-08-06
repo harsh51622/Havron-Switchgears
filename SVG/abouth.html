@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMART Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .smart-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: white;
+    }
+
+    .smart-card {
+      flex: 1;
+      min-width: 120px;
+      margin: 10px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    .smart-card .big-letter {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      font-size: 100px;
+      color: rgba(0, 255, 0, 0.1); /* faded green */
+      z-index: 0;
+      font-weight: bold;
+    }
+
+    .smart-card img {
+      height: 60px;
+      margin-bottom: 10px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .smart-card .label {
+      font-size: 16px;
+      font-weight: bold;
+      color: #002d72;
+      z-index: 1;
+      position: relative;
+    }
+
+    @media screen and (max-width: 600px) {
+      .smart-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="smart-container">
+    <div class="smart-card">
+      <img src="https://img.icons8.com/ios-filled/100/shield.png" alt="Safe" />
+      <div class="label">SAFE</div>
+      <div class="big-letter">S</div>
+    </div>
+
+    <div class="smart-card">
+      <img src="https://img.icons8.com/ios-filled/100/idea.png" alt="Modern" />
+      <div class="label">MODERN</div>
+      <div class="big-letter">M</div>
+    </div>
+
+    <div class="smart-card">
+      <img src="https://img.icons8.com/ios-filled/100/hand-holding-money.png" alt="Affordable" />
+      <div class="label">AFFORDABLE</div>
+      <div class="big-letter">A</div>
+    </div>
+
+    <div class="smart-card">
+      <img src="https://img.icons8.com/ios-filled/100/handshake.png" alt="Reliable" />
+      <div class="label">RELIABLE</div>
+      <div class="big-letter">R</div>
+    </div>
+
+    <div class="smart-card">
+      <img src="https://img.icons8.com/ios-filled/100/clock.png" alt="Timeless" />
+      <div class="label">TIMELESS</div>
+      <div class="big-letter">T</div>
+    </div>
+  </div>
+
+</body>
+</html>

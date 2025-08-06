@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="product.css">
+     <link rel="stylesheet" href="/HEADER/header.css">
+     <link rel="stylesheet" href="/FOOTER/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <body>
+<div class="header-container">
+
+    <!-- Theme and toggles -->
+    <input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="search-toggle">
+
+    <nav>
+      <div class="logoheader"><img id="img-logo" src="/LOGo/new.png" href="/MAIN/HOME/home.html"
+          onclick="setActive(this)"></div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/MAIN/HOME/home.html">HOME</a></li>
+        <li><a href="/MAIN/ABOUT US/about us.html">ABOUT US</a></li>
+        <li><a href="/MAIN/NETWORKS/Networks.html">NETWORKS</a></li>
+
+
+        <div class="Dropdown" id="productsDropdowns">
+
+          <li><a href="/MAIN/PRODUCTS/products.html">PRODUCTS</a></li>
+          <div class="dropdown-content">
+
+            <a href="/items/capacitor/capacitor.html">Capacitors</a>
+            <a href="/items/mcb/mcb.html">Mcb</a>
+            <a href="/items/doubledoor/doubledoor.html">Doubledoor</a>
+            <a href="/items/off load changepover/changeover.html">Changeover</a>
+            <a href="/items/switchgear/switchgear.html">Switchgears</a>
+
+          </div>
+        </div>
+
+
+        <li><a href="/MAIN//CONTACT US/contact us.html">CONTACT US</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="nav-right">
+        <label for="search-toggle" class="search-label" id="searchIcon">🔍</label>
+        <label onclick="toggleTheme()" class="theme-label">🌓</label>
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Search Box -->
+
+      <div class="search-box" id="searchBox">
+
+        <input type="text" id="searchInput" placeholder="Type to search (e.g. products, mcb)">
+        <button onclick="searchPage()" type="submit">Go</button>
+
+      </div>
+    </nav>
+  </div>
+
+        <div class="page" id="main-page">
+            <h1>Welcome to Our Shop</h1>
+            <div class="products">
+                <div class="itemsbackground" id="products1"><a href="/items/mcb/mcb.html">
+                        <img src="/IMAGES/items/bb40630c_mcb_fp_63a_c-curve_10ka_front.jpg" alt="Product 1"></a>
+                    <p>Miniature Circuit Breaker(MCB's)</p>
+                </div>
+                <div class="itemsbackground"><a href="/items/doubledoor/double.html">
+                        <img src="/IMAGES/items/10-way-double-door-mcb-box-500x500.jpg" alt="Product 2"></a>
+                    <p>MCB Box Double Door</p>
+                </div>
+                <div class="itemsbackground"><a href="/items/capacitor/capacitor.html">
+                        <img src="/IMAGES/items/612nI1SJjtL._AC_UF1000,1000_QL80_.jpg" alt="Product 3"></a>
+                    <p>Capacitor</p>
+                </div>
+                <div class="itemsbackground"><a href="/items/off load changepover/changeover.html">
+                        <img src="/IMAGES/items/changeover-switch-156.jpg" alt="Product 4"></a>
+                    <p>off Load Changeover</p>
+                </div>
+                <div class="itemsbackground"><a href="/items/switchgear/switchgear.html">
+                        <img src="/IMAGES/items/main-switches-397.jpg" alt="Product 5"></a>
+                    <p>Rewirable Switch Fuse Unit</p>
+                </div>
+
+                <!-- Add more products here -->
+            </div>
+        </div>
+     
+
+
+  <footer>
+    <div class="containers">
+      <div class="upperfooter">
+        <table>
+          <tr>
+            <th colspan="2"> Digital Business Transformation</th>
+          </tr>
+          <tr>
+            <!--table header cell-->
+            <td colspan="2"> Transform your businesses in order to survive in a completely digitized and connected world
+              driven by software innovation</td>
+          </tr>
+          <!-- collaspan use to merge a cell-->
+
+
+          <tr> <!--table row-->
+            <th>Web Scale</th>
+            <th>Modernization</th> <!--table data-->
+          </tr>
+          <tr>
+            <td>Globally scale websites with innovative content management and infrastructure approaches</td>
+            <!-- 2nd row, 2 columns -->
+            <td>Content-focused web and mobile solution for empowering marketers</td>
+          </tr>
+
+          <tr>
+            <th>Enterprise Mobility </th>
+            <th> Modernization</th>
+          </tr>
+          <tr>
+            <td>Faster, tailored mobile experiences for any device and data source </td>
+            <td>UX and app modemization to powerfully navigate today's digital landscape </td>
+          </tr>
+          <tr>
+            <th>aPaaS</th>
+
+          </tr>
+          <tr>
+            <td>Fuel agility with ever-ready applications, built in the cloud .</td>
+
+          </tr>
+
+        </table>
+
+        <div id="quicklinks1" class="quicklinks">
+          <h1 class="hfooter">QUICKLINKS</h1>
+          <ul>
+            <li>PRODUCTS</li>
+            <li>TRAILS</li>
+            <li>PARTNERS</li>
+            <li>SUPPORT</li>
+            <li>TRAINING</li>
+            <li>CONSULTING</li>
+            <li>BLOGS</li>
+          </ul>
+        </div>
+        <div id="quicklinks2" class="quicklinks">
+          <h1 class="hfooter">ABOUT WEBSITEs</h1>
+          <ul>
+            <li>COMPANY</li>
+            <li>COUSTOMERS</li>
+            <li>INVESTERS</li>
+            <li>RELATIONS</li>
+            <li>OFFICES</li>
+            <li>CARRERS</li>
+
+          </ul>
+        </div>
+
+        <div id="quicklinks1" class="quicklinks">
+          <h1 class="hfooter">CONTACTS</h1>
+          <ul>
+            <li>9528514757</li>
+            <li>9084810112</li>
+            <li>9525874751</li>
+
+
+
+          </ul>
+        </div>
+      </div>
+      <div class="header2" style="z-index: 100;">
+        <div class="headerleft2">
+          <img id="footerlogo" src="/LOGO/logo red.jpg" alt="havron logo">
+        </div>
+        <div class="headermid2">
+
+
+          <h1 id="hfooter">Term of Use | Privacy Policy | Trademarks | License Agreements</h1>
+
+          <p1 id="pfooter">Copyright@2025, Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved </p1>
+        </div>
+
+        <div class="headerright2">
+
+          <a href="https://web.whatsapp.com/">
+            <img src="/LOGO/instagram.png" alt=""></a>
+          <img src="/LOGO/twitter.png" alt="">
+          <img src="/LOGO/facebook.png" alt="">
+          <img src="/LOGO/whatsapp.png" alt="">
+
+
+        </div>
+      </div>
+      <div id="footer">
+
+        <div class="headerlefts">
+          <p1 id="pfooter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas at impedit aperiam
+            placeat nihil iste deleniti doloribus sequi modi  earum saepe harum vitae tempora commodi aliquid
+            nesciunt praesentium aspernatur, vel debitis quos excepturi veritatis.</p1>
+        </div>
+
+        <div class="headerrights">
+          <h1 id="pfooter">Powered by Harsh kumar</h1>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+    <script src="products.js"></script>
+    <script src="/HEADER/header.js"></script>
+    <script src="/FOOTER/footer.js"></script>
+
+</body>
+
+</html>

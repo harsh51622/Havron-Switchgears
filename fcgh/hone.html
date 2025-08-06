@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover + Tap Box</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #3498db;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: sans-serif;
+      user-select: none;
+      cursor: pointer;
+      margin: 100px auto;
+    }
+
+    /* Hover effect - only for desktop */
+    @media (hover: hover) and (pointer: fine) {
+      .box:not(.active):hover {
+        transform: scale(1.05) translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Active class (for click/tap toggle) */
+    .box.active {
+      transform: scale(1.05) translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="myBox">Tap / Hover Me</div>
+
+  <script>
+    const box = document.getElementById('myBox');
+
+    box.addEventListener('click', () => {
+      box.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

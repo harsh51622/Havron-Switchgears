@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/HEADER/headers.css">
+
+    <title>Document</title>
+</head>
+
+<!-- 🔹 Modal Form Overlay -->
+<div id="enquiryModal" class="modal">
+    <form id="enquiryForm" class="form-container" action="http://127.0.0.1:5000/submit" method="POST">
+        <button type="button" class="close-btn" id="closeBtn">&times;</button>
+        <h2>Enquiry Form</h2>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="product" placeholder="Which Product?" required />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+
+
+
+<div class="header-container">
+
+    <!-- Theme and toggles -->
+
+
+    <nav>
+        <div class="logoheader"><img id="img-logo" src="/OGO/new.png" href="/MAIN/HOME/home.html"></div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/MAIN/HOME/home.html">HOME</a></li>
+            <li><a href="/MAIN/ABOUT US/about us.html">ABOUT US</a></li>
+            <li><a href="/MAIN/NETWORKS/Networks.html">NETWORKS</a></li>
+
+
+            <div class="Dropdown" id="productsDropdowns">
+
+                <li><a href="/MAIN/PRODUCTS/products.html">PRODUCTS</a></li>
+                <div class="dropdown-content">
+
+                    <a href="/items/capacitor/capacitor.html">Capacitors</a>
+                    <a href="/items/mcb/mcb.html">Mcb</a>
+                    <a href="/items/doubledoor/doubledoor.html">Doubledoor</a>
+                    <a href="/items/off load changepover/changeover.html">Changeover</a>
+                    <a href="/items/switchgear/switchgear.html">Switchgears</a>
+
+                </div>
+            </div>
+
+
+            <li><a href="/MAIN//CONTACT US/contact us.html">CONTACT US</a></li>
+        </ul>
+
+        <!-- Right controls -->
+        <div class="nav-right">
+
+
+
+            <label class="search-label" id="searchIcon">&#128269;</label>
+            <label onclick="toggleTheme()" class="theme-label">🌓</label>
+            <button id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+        </div>
+</div>
+
+<!-- Search Box -->
+
+<div class="search-box" id="searchBox">
+
+    <input type="text" id="searchInput" placeholder="Type to search (e.g. products, mcb)">
+    <button>Go</button>
+
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="/MAIN/HOME/home.html">HOME</a>
+    <a href="/MAIN/ABOUT US/about us.html">ABOUT US</a>
+    <a href="/MAIN/NETWORKS/Networks.html">NETWORKS</a>
+    <a href="/MAIN/PRODUCTS/products.html">PRODUCTS</a>
+    <a href="/MAIN//CONTACT US/contact us.html">CONTACT US</a>
+</div>
+</div>
+</nav>
+</div>
+
+
+<div class="slider-container">
+    <div class="slides" id="slides">
+
+        <div class="slide"><img src="/IMAGES/accounting.png" /></div>
+        <div class="slide"><img src="/IMAGES/ani1.jpg" /></div>
+        <div class="slide"><img src="/IMAGES/download-product-brouchure.jpg" /></div>
+        <div class="slide"><img src="/IMAGES/earth.png" /></div>
+        <div class="slide"><img src="/IMAGES/hands.png" /></div>
+
+    </div>
+
+    <!-- Arrow Buttons -->
+    <button class="arrow left" id="prevBtn">&#10094;</button>
+    <button class="arrow right" id="nextBtn">&#10095;</button>
+
+
+    <div class="dots" id="dots"></div>
+
+</div>
+
+<div class="products">
+
+    <button class="hover-button">
+        OUR PRODUCTS >
+    </button>
+
+    <div class="allclickproducts">
+        <div class="productmcb">
+            <button class="mcbs"><a href="/items/mcb/mcb.html">
+                    <img id="cross" src="/svg/items pencil pohoto/circuit-breaker.png" alt=""></a>
+            </button>
+            <strong id="productname">MCBs</strong>
+        </div>
+        <div class="productmcb">
+            <button class="mcbs"><a href="/items/mcb/mcb.html">
+                    <img id="cross" src="/SVG/items pencil pohoto/double door.png" alt=""></a>
+            </button>
+            <strong id="productname">Double Door</strong>
+        </div>
+        <div class="productmcb">
+            <button class="mcbs"><a href="/items/mcb/mcb.html">
+                    <img id="cross" src="/SVG/items pencil pohoto/capacitor.png" alt=""></a>
+            </button>
+            <strong id="productname">Capacitors</strong>
+        </div>
+        <div class="productmcb">
+            <button class="mcbs"><a href="/items/mcb/mcb.html">
+                    <img id="cross" src="/SVG/items pencil pohoto/changeover.png" alt=""></a>
+            </button>
+            <strong id="productname">Changeover</strong>
+        </div>
+        <div class="productmcb">
+            <button class="mcbs"><a href="/items/mcb/mcb.html">
+                    <img id="cross" src="/SVG/items pencil pohoto/switchgear.png" alt=""></a>
+            </button>
+            <strong id="productname">Switchgears</strong>
+        </div>
+
+
+
+
+    </div>
+</div>
+<div class="whychoose ">
+
+    <div class="whychooseimage">
+        <img src="/IMAGES/why choose us.webp" alt="">
+    </div>
+
+
+    <div class="whychoosehavron">
+        <div class="pchoose">
+            <p> Havron Electric Technology was a professional circuit breaker supplier and manufacturer
+                founded in 2022 Located in D County, Huzhou City, Zhejiang Province.We are a large-scale,
+                comprehensive high-tech enterprise integrating design, research and development,
+                manufacturing, marketing, and service for circuit <br> <br>
+                Since its establishment, MAXGE has been professionally oriented and committed to the
+                mission of being a professional circuit breaker manufacturer. integrate the design
+                and manufacturing of a series of products, such as low-voltage circuit breakers and
+                control gear for domestic, industrial, and new energy power distribution, to meet user
+                needs and provide high-quality solutions.</p>
+
+            <h1>Why Choose Maxge</h1>
+        </div>
+        <div class="p2choose">
+            <img src="/SVG/icons8-cross-50.png" alt="">
+            <div class="logochoose">
+                <h2>Scale Advantage</h2>
+
+                <p>Maxge owns an 80000+ square meter
+                    manufacturing facility & over 700
+                    employees.As a recognized circuit breaker manufacturer. Our products are exported to
+                    more than
+                    60 different countries and regions including the European Union, the Middle East,
+                    Asia, Africa, and Latin America.
+                </p>
+            </div>
+        </div>
+        <div class="p2choose">
+            <img src="/SVG/icons8-cross-50.png" alt="">
+            <div class="logochoose">
+                <h2>International Certification</h2>
+
+                <p>
+                    Being the leading circuit breaker manufacturer and supplier our
+                    facilities are accredited with quality management system certificates for compliance
+                    with ISO 9001, ISO 14001 and
+                    OHSAS 18001 requirements & products are certified with internationally reowned
+                    certification bodies such as VD, KEMA, DEKRA, ASTA, SEMKO,TUV, INMETRO,EAC, CB, CE.
+                </p>
+            </div>
+        </div>
+        <div class="p2choose">
+            <img src="/SVG/icons8-cross-50.png" alt="">
+            <div class="logochoose">
+                <h2>Environment Friendly</h2>
+
+                <p>
+                    As a responsible circuit breaker manufacturer we give upmost priority to energy
+                    conservation and emission. Our products are manufactured in compliance
+                    with ROHS & REACH Standards
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="scroll-container">
+
+    <h1>Why Choose Havron</h1>
+    <p1>At Havron, we go beyond traditional electrical equipment supply—we deliver comprehensive manufacturing
+        capabilities, stringent quality assurance, and dedicated technical support to help electrical contractors and
+        businesses succeed. From custom electrical solutions to expedited delivery, we ensure seamless experiences for
+        our electrical
+        <div class="allboxes">
+    <div class="box">
+        <img src="/IMAGES/why choose and why havron/achievement.png" alt="">
+
+        <h1>Quality Assurance</h1>
+        <p>HAVRON has established a rigorous quality control system to ensure optimal configurations and top-tier
+            service for our customers</p>
+    </div>
+
+    <div class="box">
+        <img src="/IMAGES/why choose and why havron/storytelling.png" alt="">
+
+        <h1>Experience of industry​</h1>
+        <p> HAVRON technology has advanced international technology, more than 20 national
+            patents. And 15 years of experince in field of electric goods</p>
+    </div>
+    <div class="box">
+        <img src="/IMAGES/why choose and why havron/customer-service-agent.png" alt="">
+
+        <h1>Caring After-Sales Support</h1>
+        <p>Our team provides attentive one-on-one support and regular visits for worry-free experiences</p>
+    </div>
+
+    <div class="box">
+        <img src="/IMAGES/why choose and why havron/laptop.png" alt="">
+
+        <h1>Custom Solutions</h1>
+        <p>Tailored solutions designed to match industry-specific demands and meet unique customer needs​</p>
+    </div>
+
+    <div class="box">
+        <img src="/IMAGES/why choose and why havron/partners.png" alt="">
+
+        <h1>Team Expert</h1>
+        <p>Our team comprises 15 in-house Team experts, supplemented by approximately 10 external units and technical
+            consultants."</p>
+    </div>
+
+    <div class="box">
+        <img src="/IMAGES/why choose and why havron//truck.png" alt="">
+
+        <h1>Swift Availability​</h1>
+        <p>State-of-the-art manufacturing, versatile modular products, and a committed expert team guarantee rapid and
+            efficient deliveries</p>
+
+</div>
+
+
+</div></div>
+
+
+<div class="aboutus">
+    <div class="aboutboxes">
+        <ul>
+            <li><img src="/SVG/about us/target.png" alt="">
+                <p>Safe</p>
+            </li>
+            <li><img src="/SVG/about us/settings.png" alt="">
+                <p>MODERN</p>
+            </li>
+            <li><img src="/SVG/about us/social-care.png" alt="">
+                <p>AFFORDABLE</p>
+            </li>
+            <li><img src="/SVG/about us/handshake.png" alt="">
+                <p>RELIABLE</p>
+            </li>
+            <li><img src="/SVG/about us/timeline.png" alt="">
+                <p>TIMELINES</p>
+            </li>
+        </ul>
+    </div>
+    <div class="abouttext">
+        <h1>About Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima tempora facilis omnis officia culpa ut
+            dolorem sed? Fuga architecto consectetur magni optio illum adipisci aliquid vitae inventore omnis
+            asperiores
+            voluptatibus ipsa rerum dolor aut explicabo suscipit dignissimos sunt eveniet cupiditate, eligendi iusto
+            dicta ipsam velit nam! Eaque error, sint quisquam ex, magnam eos voluptatem odio, autem minus nam veniam
+            aliquam nisi cum deleniti aspernatur eius sequi praesentium dolores! Nam vel beatae exercitationem ipsa
+            ullam eum modi quod nulla sequi animi, eaque atque dolore corporis a impedit saepe tempora molestias
+            perspiciatis voluptas officia tenetur! Molestiae quis laborum corporis repudiandae repellendus vitae aut
+            ducimus perspiciatis doloribus nam incidunt suscipit aperiam dolor minima, harum quia quod voluptatem
+            optio,
+            fugit sequi doloremque officia nostrum, libero repellat! Aut nesciunt velit nisi molestias deserunt
+            soluta
+            debitis suscipit quia ipsam obcaecati animi distinctio delectus ex ullam, recusandae quidem beatae
+            numquam
+            nihil rerum? Ducimus iste enim consequuntur nesciunt provident?<br><br>
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic facere sapiente harum accusantium
+            nesciunt nobis, quos delectus voluptatem dolor, porro cupiditate exercitationem voluptatum aperiam,
+            fugit
+            molestiae quis iure labore laborum excepturi alias officiis. Unde quia sequi expedita temporibus
+            pariatur
+            cumque.<br><button onclick="knowmore()" id="know-moreabout">Know More</button></p>
+    </div>
+</div>
+
+<div class="factoryphotos">
+    <h1>OUR FACTORY PHOTOS</h1>
+    <div class="photosouter">
+        <div class="photosfactory">
+            <img src="/IMAGES/factory photos/All-Professional-Works-1.jpg" alt="">
+            <img src="/IMAGES/factory photos/All-Professional-Works-4.jpg" alt="">
+            <img src="/IMAGES/factory photos/All-Professional-Works-3.jpg" alt="">
+            <img src="/IMAGES/factory photos/All-Professional-Works-2.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="advertising">
+
+    <div class="headadvertising">
+        <h1>Applications </h1><h2>Electrical Solution for Every Neeed</h2>
+        <p>As a trusted electrical equipment manufacturer, VIOX delivers high-performance electrical solutions designed
+            for residential, commercial, industrial, and renewable energy applications—providing cost savings,
+            operational efficiency, and reliability across diverse industries worldwide.</p>
+    </div>
+    <div class="alladvertising">
+        <div class="adcver-tising">
+            <div class="advertising1" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/IMAGES/why choose and why havron/image-of-the-renewable-energy.jpg'); ">
+                <img src="/IMAGES/why choose and why havron/solar-energy.png" alt="">
+
+                <h1>Solar & Renewable Energy Systems</h1>
+                    <p>
+                        The solar sector relies on specialized DC components for safe high-voltage management and surge
+                        protection in photovoltaic systems.</p>
+            </div>
+        </div>
+        <div class="adver-tising">
+            <div class="advertising1" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/IMAGES/why choose and why havron/potential-threats-automated-factories-Blog-1024x598-1.png'); ">
+                <img src="/IMAGES/why choose and why havron/automation.png" alt="">
+
+                <h1>Industrial Manufacturing & Automation</h1>
+                <p>Industrial manufacturing requires robust electrical controls for heavy machinery and automation
+                    systems.</p>
+            </div>
+        </div>
+        <div class="adver-tising">
+            <div class="advertising1" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/IMAGES/why choose and why havron/europe-modern-complex-of-residential-buildings.jpg'); ">
+                <img src="/IMAGES/why choose and why havron/building.png" alt="">
+
+                <h1>Commercial & Residential Buildings</h1>
+                <p>Buildings need electrical solutions prioritizing safety and efficiency while meeting codes.</p>
+            </div>
+        </div>
+        <div class="adver-tising">
+            <div class="advertising1" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/IMAGES/why choose and why havron/shipping-1.jpg'); ">
+                <img src="/IMAGES/why choose and why havron/cruise.png" alt="">
+
+                <h1>Marine & Offshore Industries</h1>
+                <p>Marine applications require components withstanding saltwater, humidity, and vibration.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="trusted">
+    <div class="trustedbox">
+        <img src="" alt="">
+    </div>
+</div>
+
+
+
+<div class="countings">
+    <h1 class="greeting-title">GREETING FROM TEAM HAVRON</h1>
+    <p class="greeting-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor molestias excepturi quam distinctio
+        ipsa dolores voluptas libero perspiciatis error laboriosam corporis doloremque aperiam,
+    </p>
+    <div class="counter-container">
+        <div class="counter-item">
+            <h1 class="counter-box" id="counter-box1">0</h1>
+            <h1 class="counter-label">Years in Industry</h1>
+        </div>
+        <div class="counter-item">
+            <h1 class="counter-box" id="counter-box2">0</h1>
+            <h1 class="counter-label">Available in cities</h1>
+        </div>
+        <div class="counter-item">
+            <h1 class="counter-box" id="counter-box3">0</h1>
+            <h1 class="counter-label">Numbers of products</h1>
+        </div>
+        <div class="counter-item">
+            <h1 class="counter-box" id="counter-box4">0</h1>
+            <h1 class="counter-label">Customers Network</h1>
+        </div>
+        <div class="counter-item">
+            <h1 class="counter-box" id="counter-box5">0</h1>
+            <h1 class="counter-label">Dealers Network</h1>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<script src="home.js"></script>
+
+<script src="/HEADER/header.js"></script>
+
+
+</body>
+
+</html>

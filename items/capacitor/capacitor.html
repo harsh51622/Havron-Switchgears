@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="capacitor.css">
+    <link rel="stylesheet" href="/HEADER/header.css">
+  
+    <title>Document</title>
+</head>
+
+<body>
+  <div class="header-container">
+
+    <!-- Theme and toggles -->
+    <input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="search-toggle">
+
+    <nav>
+      <div class="logoheader"><img id="img-logo" src="/LOGo/new.png" href="/MAIN/HOME/home.html"
+          onclick="setActive(this)"></div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/MAIN/HOME/home.html">HOME</a></li>
+        <li><a href="/MAIN/ABOUT US/about us.html">ABOUT US</a></li>
+        <li><a href="/MAIN/NETWORKS/Networks.html">NETWORKS</a></li>
+
+
+        <div class="Dropdown" id="productsDropdowns">
+
+          <li><a href="/MAIN/PRODUCTS/products.html">PRODUCTS</a></li>
+          <div class="dropdown-content">
+
+            <a href="/items/capacitor/capacitor.html">Capacitors</a>
+            <a href="/items/mcb/mcb.html">Mcb</a>
+            <a href="/items/doubledoor/doubledoor.html">Doubledoor</a>
+            <a href="/items/off load changepover/changeover.html">Changeover</a>
+            <a href="/items/switchgear/switchgear.html">Switchgears</a>
+
+          </div>
+        </div>
+
+
+        <li><a href="/MAIN//CONTACT US/contact us.html">CONTACT US</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="nav-right">
+        <label for="search-toggle" class="search-label" id="searchIcon">🔍</label>
+        <label onclick="toggleTheme()" class="theme-label">🌓</label>
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Search Box -->
+
+      <div class="search-box" id="searchBox">
+
+        <input type="text" id="searchInput" placeholder="Type to search (e.g. products, mcb)">
+        <button onclick="searchPage()" type="submit">Go</button>
+
+      </div>
+    </nav>
+  </div>
+            <div class="locates">
+                <button id="homebtn" class="allinone" onclick="window.location.href='/MAIN/HOME/home.html'">HOME</button>
+                <button class="allinone">/</button>
+                <button id="backbtn" class="allinone" onclick="goBack()">BACK</button>
+            </div>
+
+        <div id="product1" class="product-page">
+            <h2 style="font-size: 50px; text-align: center;">CAPACITORS</h2>
+            <div class="information">
+                <div class="leftdetails">
+                    <img src="/IMAGEs/items/IMG-20250412-WA0003.jpg" alt="Miniature Circuit Breaker (MCB's)">
+                </div>
+
+                <div class="rightdetails">
+                    <h3 style="font-size: 25px; font-weight: bolder; margin-left: 50px;"> USP’s
+                    </h3>
+                    <ul>
+                        <li>● Made with special technology metalized film that extends the life of the capacitors</li>
+                        <li>● Can operate with the same efficiency over a wide range of temperatures and humidity</li>
+                        <li>● Manufacturing process of the capacitor is tailor made to suit the requirements of the fans
+                        </li>
+                        <li>● Low internal power losses conserve energy</li>
+                        <li>● Non PCB Encapsulation</li>
+                        <li>● ECO Friendly</li>
+                        <li>● High Insulation Resistance</li>
+                    </ul>
+
+                    <h3 style="font-size: 25px; font-weight: bolder; margin-left: 50px;">RANGE
+                    </h3>
+                    <ul>
+                        <li>● DRY Can – 2.25muf – 72muf</li>
+                        <li>● Aluminum Oil Can – 2.25muf – 4muf</li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <table>
+           <!--table header cell--> <th colspan="3">TECHNICAL SPECIFICATIONS</th> <!-- collaspan use to merge a cell-->
+           
+            <tr>
+                <td>Capacitance Range</td>
+                <td>:</td>
+                <td>40/60 MFD ~ 200/250 MFD</td>
+            </tr>
+            <tr>
+                <td>Capacitance Tolerance</td>
+                <td>:</td>
+                <td>±5%, ±10%</td>
+            </tr>
+            <tr>
+                <td>Rated Voltage</td>
+                <td>:</td>
+                <td>230 ~ 275V AC</td>
+            </tr>
+            <tr>
+                <td> Rated Frequency</td>
+                <td>:</td>
+                <td>50/60Hz</td>
+            </tr>
+            <tr>
+                <td>Tan Delta </td>
+                <td>:</td>
+                <td>≤0.0020(100Hz)</td>
+            </tr>
+            <tr>
+                <td>Climatic Category</td>
+                <td>:</td>
+                <td>-25/70/21</td>
+            </tr>
+            <tr>
+                <td>Case</td>
+                <td>:</td>
+                <td>Aluminium</td>
+            </tr>
+            <tr>
+                <td>Dielectric</td>
+                <td>:</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Encapsulation</td>
+                <td>:</td>
+                <td>Semi-Biodegradable Resin</td>
+            </tr>
+            <tr>
+                <td>Reference Standards</td>
+                <td>:</td>
+                <td>IEC 60252 , IS:2993</td>
+            </tr>
+
+
+        </table>
+
+
+
+
+        <script src="capacitor.js"></script>
+        <script src="/HEADER/header.js"></script>
+</body>
+
+</html>

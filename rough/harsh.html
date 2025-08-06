@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamburger Menu</title>
+  <style>
+    .hamburger {
+      cursor: pointer;
+      width: 30px;
+      padding: 10px;
+    }
+
+    .bar {
+      height: 4px;
+      background: black;
+      margin: 5px 0;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      background: #eee;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .menu.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hamburger" id="hamburger">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<div class="menu" id="menu">
+  <a href="#">Home</a><br>
+  <a href="#">About</a><br>
+  <a href="#">Contact</a>
+</div>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('nav-links');
+
+  // Toggle menu on hamburger click
+  hamburger.addEventListener('click', function (event) {
+    menu.classList.toggle('active');
+    event.stopPropagation(); // Prevent click from reaching document
+  });
+
+  // Optional: prevent menu clicks from closing it
+  menu.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function () {
+    menu.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>

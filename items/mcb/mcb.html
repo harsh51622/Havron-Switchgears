@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mcb.css">
+    <link rel="stylesheet" href="/HEADER/header.css">
+   
+</head>
+
+<body>
+    <body>
+<div class="header-container">
+
+    <!-- Theme and toggles -->
+    <input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="search-toggle">
+
+    <nav>
+      <div class="logoheader"><img id="img-logo" src="/LOGo/new.png" href="/MAIN/HOME/home.html"
+          onclick="setActive(this)"></div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/MAIN/HOME/home.html">HOME</a></li>
+        <li><a href="/MAIN/ABOUT US/about us.html">ABOUT US</a></li>
+        <li><a href="/MAIN/NETWORKS/Networks.html">NETWORKS</a></li>
+
+
+        <div class="Dropdown" id="productsDropdowns">
+
+          <li><a href="/MAIN/PRODUCTS/products.html">PRODUCTS</a></li>
+          <div class="dropdown-content">
+
+            <a href="/items/capacitor/capacitor.html">Capacitors</a>
+            <a href="/items/mcb/mcb.html">Mcb</a>
+            <a href="/items/doubledoor/doubledoor.html">Doubledoor</a>
+            <a href="/items/off load changepover/changeover.html">Changeover</a>
+            <a href="/items/switchgear/switchgear.html">Switchgears</a>
+
+          </div>
+        </div>
+
+
+        <li><a href="/MAIN//CONTACT US/contact us.html">CONTACT US</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="nav-right">
+        <label for="search-toggle" class="search-label" id="searchIcon">🔍</label>
+        <label onclick="toggleTheme()" class="theme-label">🌓</label>
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Search Box -->
+
+      <div class="search-box" id="searchBox">
+
+        <input type="text" id="searchInput" placeholder="Type to search (e.g. products, mcb)">
+        <button onclick="searchPage()" type="submit">Go</button>
+
+      </div>
+    </nav>
+  </div>
+        <div class="locates">
+            <button id="homebtn" class="allinone" onclick="window.location.href='/MAIN/HOME/home.html'">HOME</button>
+            <button class="allinone">/</button>
+            <button id="backbtn" class="allinone" onclick="goBack()">BACK</button>
+        </div>
+
+        <div id="product1" class="product-page">
+            <h2>Miniature Circuit Breaker (MCB's)</h2>
+            <div class="information">
+                <div class="leftdetails">
+                    <img src="/IMAGES/20240410040237d91bf.webp" alt="Miniature Circuit Breaker (MCB's)">
+                </div>
+
+                <div class="rightdetails">
+                    <h3 > APPLICATION
+                    </h3>
+                    <P>Protect all type of electrical/electronic gadgets & appliances from Short Circuits & Over Load
+                        conditions</P>
+                    <h4 > USP’s
+                    </h4>
+
+
+
+                    <ul >
+                        <li>● Breaking Capacity 10kA – The MCB can break high Short Circuit fault under the conditions
+                            of 3 phase fault or phase - Neutral fault, voltage dip. The Elmeck MCB can protect equipment
+                            by opening the contacts even if the high current of 10kA appears.</li>
+                        <li>● Energy Limit Class 3 - Elmeck MCB is designed to allow minimum let through energy in case
+                            of faults. It operates with high-speed mechanism in which Electrodynamic forces set up by
+                            the heavy current due to short-circuit, separates the contacts several times faster before
+                            it could reach the peak value, thus suppressing the high current.</li>
+                        <li>● Finger Touch Proof (IP20) - Finger proof terminals eliminate chances of accidental contact
+                            with live parts. All the live parts are shrouded/ inaccessible; ensuring safety of
+                            installers.</li>
+                        <li>● Positive Contact Indicator – Elmeck MCB has a clearly visible contact position indicator to identify the real positions of contacts inside the MCB.</li>
+                        <li>● Large Cable Terminals – Elmeck MCB can accommodate wire size of upto 35sq. mm.</li>
+                        <li>● Energy Efficient - Elmeck MCB has lower wattage loss values as compared to the specification of IS/IEC standards. Due to lower wattage loss, it can be termed as an energy efficient.</li>
+                        <li>● Available in B & C Curves.</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <table>
+                  <!--table header cell--> <th colspan="2">TECHNICAL SPECIFICATIONS</th> <!-- collaspan use to merge a cell-->
+                   
+                   
+                        <tr> <!--table row--> 
+                          <td >RStandard Conformity</td>
+                          <td>IS/IEC 60898-1-2002</td>  <!--table data--> 
+                        </tr>
+                        <tr>
+                          <td>Standard Rated Current (In)</td> <!-- 2nd row, 2 columns -->
+                          <td>6A-63A</td>
+                        </tr>
+                        
+                          <tr>
+                            <td>Poles</td> 
+                            <td>SP, SP+N, DP, TP, TP+N, FP</td>
+                          </tr>
+                          <tr>
+                            <td>Rated Short Circuit Breaking Capacity (Icn)</td> 
+                            <td>10000A (10kA)</td>
+                          </tr>
+                          <tr>
+                            <td>Rated Voltage (Ue)</td> 
+                            <td>240/415V AC</td>
+                          </tr>
+                          <tr>
+                            <td>Rated Frequency (f)</td> 
+                            <td>50Hz</td>
+                          </tr>
+                          <tr>
+                            <td>Rated Insulation Voltage (Ui)</td> 
+                            <td>660V-</td>
+                          </tr>
+                          <tr>
+                            <td>Ambient Temperature</td> 
+                            <td> -5’ to 55’C</td>
+                          </tr>
+                      </table>
+                     
+        </div>
+
+
+        <script src="mcb.js"></script>
+        <script src="/HEADER/header.js"></script>
+</body>
+
+</html>
